@@ -1,6 +1,9 @@
-<script setup>
-import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head } from '@inertiajs/vue3';
+<script>
+import AuthenticatedLayout from "@/Layouts/AuthenticatedLayout.vue";
+import { Head } from "@inertiajs/vue3";
+export default {
+    layout: AuthenticatedLayout,
+};
 </script>
 
 <template>
@@ -8,7 +11,9 @@ import { Head } from '@inertiajs/vue3';
 
     <AuthenticatedLayout>
         <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">Settings</h2>
+            <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                Settings
+            </h2>
         </template>
 
         <div class="py-12">
